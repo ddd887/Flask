@@ -12,7 +12,7 @@ app = Flask(__name__,
 def a_page():
     user_name = request.form.get('uname')
     user_pass = request.form.get('upass')
-    return "this is a page %s hahaha"%(request.headers.get('User-agent'))
+    return "this is a page %s hahaha"%(request.headers.get('User-agent'))  #也能改为request.path/.fullpath/.url/.baseurl/.user_agent.platform
     pass
 
 #装饰器,关联路由
