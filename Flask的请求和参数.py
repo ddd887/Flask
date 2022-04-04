@@ -8,6 +8,7 @@ app = Flask(__name__,
             template_folder='templages' #模板文件
             )
 
+#一种传参方式
 @app.route('/ac/<user>/<passwd>')
 def c_page(user,passwd):
     return "this is a page %s ----- %s hahaha"%(user,passwd)       
