@@ -35,6 +35,10 @@ def a_page():
 def logout():
     session.pop('user_id',None)
     session.pop('vip',None)
+            
+    #session['user_id'] = False
+
+    #session.clear()
     return 'logout'
     pass
 
